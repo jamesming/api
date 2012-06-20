@@ -168,11 +168,16 @@ window.parent.<?php  echo $this->input->post('php_callback_dom_el');   ?>
 	'margin-top':'-<?php echo $marginTop;    ?>px'
 })
 .attr({
-		id	: <?php  echo $this->id   ?>
+		image_id	: <?php  echo $this->id   ?>
 	 ,src: '<?php  echo base_url() . $thumb_path . "?random=" . rand(5,124344523)   ?>'
 	
 });
 
+/* 
+*
+*  The following will be called if cropping
+*
+*/
 window.parent.$('#launchModal').click();
 								
 
