@@ -171,7 +171,25 @@ window.parent.<?php  echo $this->input->post('php_callback_dom_el');   ?>
 		image_id	: <?php  echo $this->id   ?>
 	 ,src: '<?php  echo base_url() . $thumb_path . "?random=" . rand(5,124344523)   ?>'
 	
-});
+})
+.parent().attr({
+	'href':'<?php  echo base_url() . $original_path . "?random=" . rand(5,124344523)   ?>'	
+	,'rel':'gallery'	
+	,'title':'<?php  echo $this->id   ?>'	
+})
+.addClass('pirobox_gall');
+
+
+
+window.parent.$.piroBox_ext({
+								piro_speed :700,
+								bg_alpha : 0.9,
+								piro_scroll : true,
+								piro_drag :null,
+								piro_nav_pos: 'bottom'
+							});
+
+
 
 /* 
 *
