@@ -177,17 +177,6 @@ window.parent.<?php  echo $this->input->post('php_callback_dom_el');   ?>
 	,'rel':'gallery'	
 	,'title':'<?php  echo $this->id   ?>'	
 })
-.addClass('pirobox_gall');
-
-
-
-window.parent.$.piroBox_ext({
-								piro_speed :700,
-								bg_alpha : 0.9,
-								piro_scroll : true,
-								piro_drag :null,
-								piro_nav_pos: 'bottom'
-							});
 
 
 
