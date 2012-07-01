@@ -48,6 +48,8 @@ class Query {
 	
 	function put_table_by_id( $table, $id, $set_what_array){
 		
+		$this->add_column_if_not_exist($table, $set_what_array);		
+		
 		return $this->CI->my_database_model->update_table_where(
 					$table, 
 					$where_array = array('id' => $id),
