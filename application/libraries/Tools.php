@@ -26,6 +26,19 @@ function Tools(){
 	
 }
 
+
+
+
+function html2json( $str ){
+	
+	$str = htmlspecialchars($str, ENT_QUOTES);
+	$str = nl2br($str);
+	$str = str_replace("<br />", "<br />/\/",    $str    );
+	$str = str_replace("&lt;br&gt;", '<br />', $str);
+	
+	return $str;
+	
+}
 	
 /**
  * Function to determine if browser is Safari
